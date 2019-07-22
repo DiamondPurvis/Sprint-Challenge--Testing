@@ -26,6 +26,15 @@ describe("GET /games tests", () => {
         });
       expect(res.status).toBe(201);
     });
-    it('should return status 422 if missing genre title', async () => {});
+    it('should return status 422 if missing game title', async () => {
+      const res = await request(server)
+        .post('/games')
+        .send({
+          title: '',
+          genre: 'Arcade',
+          releaseYear: 1980
+        });
+      expect(res.status).toBe(422);
+    });
     it('should ', () => {});
   });
