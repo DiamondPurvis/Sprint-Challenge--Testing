@@ -30,10 +30,10 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 ## Project Set Up
 
-- [ ] Fork and clone this repository.
-- [ ] **CD into the folder** where you downloaded the repository.
-- [ ] Run `yarn` or `npm i` to download all dependencies.
-- [ ] Type `yarn test` or `npm test` to run the tests. The `test` script is already configured.
+- [x ] Fork and clone this repository.
+- [x ] **CD into the folder** where you downloaded the repository.
+- [x ] Run `yarn` or `npm i` to download all dependencies.
+- [ x] Type `yarn test` or `npm test` to run the tests. The `test` script is already configured.
 
 ## Minimum Viable Product
 
@@ -57,6 +57,7 @@ Below is a product specification covering the requirements for your endpoints.
     releaseYear: 1980 // not required
   }
   ```
+  
 
 - [ ] In the route handler, validate that the required fields are included inside the body. If the information is incomplete, return a `422` status code.
 - [ ] Write tests to verify that the endpoint returns the correct HTTP status code when receiving correct and incorrect game data.
