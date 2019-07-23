@@ -1,0 +1,22 @@
+<Document>
+  <DataFormatSettings>
+    <BlobInfo>(BLOB)</BlobInfo>
+    <BlobMode>base64</BlobMode>
+    <DateFormat>yyyy-MM-dd</DateFormat>
+    <DateTimeFormat>yyyy-MM-dd HH:mm:ss</DateTimeFormat>
+    <DecimalSeparator>.</DecimalSeparator>
+    <DefaultDateTime>2000-01-01T00:00:00</DefaultDateTime>
+    <DefaultNumber>0</DefaultNumber>
+    <DefautlLogical>0</DefautlLogical>
+    <FalseValues>false, no, 0, off</FalseValues>
+    <HexBytesOnLine>0</HexBytesOnLine>
+    <LogAllErrors>0</LogAllErrors>
+    <NullValues>(NULL)</NullValues>
+    <OnErrorMode>propagate</OnErrorMode>
+    <TimeFormat>HH:mm:ss</TimeFormat>
+    <TrueValues>true, yes, 1, on</TrueValues>
+  </DataFormatSettings>
+  <GeneralSettings>
+    <CacheOnlyModelsInProject>0</CacheOnlyModelsInProject>
+  </GeneralSettings>
+</Document>
