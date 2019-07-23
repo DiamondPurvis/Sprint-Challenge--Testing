@@ -6,42 +6,42 @@ describe("GET /games tests", () => {
     const res = await request(server).get("/games");
     expect(res.status).toBe(200);
   });
-  it('should return an array', async () => {
+  it("should return an array", async () => {
     const res = await request(server).get('/games');
     expect(Array.isArray(res.body)).toBe(true);
   });
-  it('should return an array if empty', async () => {
-    const res = await request(server).get('/games');
+  it("should return an array if empty", async () => {
+    const res = await request(server).get("/games");
     expect(res.body).toEqual([]);
   });});
 
-  describe('POST /games tests', () => {
-    it('should return status 201', async () => {
+  describe("POST /games tests", () => {
+    it("should return status 201", async () => {
       const res = await request(server)
-        .post('/games')
+        .post("/games")
         .send({
-          title: 'Pacman',
-          genre: 'Arcade',
+          title: "Pacman",
+          genre: "Arcade",
           releaseYear: 1980
         });
       expect(res.status).toBe(201);
     });
-    it('should return status 422 if missing game title', async () => {
+    it("should return status 422 if missing game title", async () => {
       const res = await request(server)
-        .post('/games')
+        .post("/games")
         .send({
-          title: '',
-          genre: 'Arcade',
+          title: "",
+          genre: "Arcade",
           releaseYear: 1980
         });
       expect(res.status).toBe(422);
     });
-    it('should return status 422 if missing game genre', async () => {
+    it("should return status 422 if missing game genre", async () => {
       const res = await request(server)
-        .post('/games')
+        .post("/games")
         .send({
-          title: 'Pacman',
-          genre: '',
+          title: "Pacman",
+          genre: "",
           releaseYear: 1980
         });
       expect(res.status).toBe(422);
